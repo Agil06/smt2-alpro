@@ -22,7 +22,7 @@ int main() {
     
     if (M != N) {
         printf("Nilai M dan N harus sama\n");
-        return 1; // Keluar program dengan kode error
+        return 1;
     }
     
     int **matriks = (int **)malloc(M * sizeof(int *));
@@ -33,11 +33,11 @@ int main() {
     for (int i = 0; i < M; i++) {
         for (int j = 0; j < N; j++) {
             if (i == j) {
-                matriks[i][j] = 1; // Diagonal utama
+                matriks[i][j] = 1;
             } else if (i < j) {
-                matriks[i][j] = 0; // Atas diagonal utama
+                matriks[i][j] = 0;
             } else {
-                matriks[i][j] = 2; // Bawah diagonal utama
+                matriks[i][j] = 2;
             }
         }
     }
